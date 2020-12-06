@@ -93,6 +93,23 @@
 
       <hr />
 
+      <Collection
+        path={'posts/'}
+        query={(ref) => ref.orderBy('createdAt')}
+        let:data={posts}
+        let:ref={postsRef}
+        log>
+        {#each posts as post}
+          <h2>{post.title}</h2>
+
+          <p>
+            Document created at
+            <em>{new Date(post.createdAt).toLocaleString()}</em>
+          </p>
+        {/each}
+        <span slot="loading">Loading posts...</span>
+      </Collection>
+
       <!-- 3. 📜 Get a Firestore document owned by a user -->
       <Doc path={`posts/${user.uid}`} let:data={post} let:ref={postRef} log>
         <h2>{post.title}</h2>
