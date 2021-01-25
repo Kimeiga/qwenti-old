@@ -9,13 +9,13 @@
 
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
   const firebaseConfig = {
-    apiKey: "AIzaSyACw3t_eq4PCOTIrEKtAiVhfSJJtg69HtI",
-    authDomain: "qwenti.firebaseapp.com",
-    projectId: "qwenti",
-    storageBucket: "qwenti.appspot.com",
-    messagingSenderId: "657887503910",
-    appId: "1:657887503910:web:98dfa1e573a00ea7c1a8e7",
-    measurementId: "G-QVF1MP9JG4",
+    apiKey: "AIzaSyCy2CnRPSQisQO4JMIUXZs9PlwlPOvCjCA",
+    authDomain: "megauno.firebaseapp.com",
+    projectId: "megauno",
+    storageBucket: "megauno.appspot.com",
+    messagingSenderId: "559730893311",
+    appId: "1:559730893311:web:8390c5674d6e1bbd9ac7ca",
+    measurementId: "G-5GP74FY121"
   };
 
   firebase.initializeApp(firebaseConfig);
