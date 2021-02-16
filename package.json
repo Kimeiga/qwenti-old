@@ -1,21 +1,31 @@
 {
-  "name": "svelte-app",
+  "name": "qwenti-nuxt",
   "version": "1.0.0",
+  "private": true,
   "scripts": {
-    "build": "rollup -c",
-    "dev": "rollup -c -w",
-    "start": "sirv public"
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
+    "lint": "yarn lint:js"
+  },
+  "dependencies": {
+    "@nuxtjs/pwa": "^3.3.5",
+    "core-js": "^3.8.3",
+    "nuxt": "^2.14.12",
+    "v-calendar": "^2.2.3",
+    "vue-search-select": "^2.9.3"
   },
   "devDependencies": {
-    "firebase": "^7.5.2",
-    "rollup": "^1.27.9",
-    "rollup-plugin-commonjs": "^10.0.0",
-    "rollup-plugin-livereload": "^1.0.0",
-    "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-svelte": "^5.0.3",
-    "rollup-plugin-terser": "^5.1.2",
-    "sirv-cli": "^0.4.4",
-    "svelte": "^3.16.3",
-    "sveltefire": "^0.1.1"
+    "@nuxtjs/eslint-config": "^5.0.0",
+    "@nuxtjs/eslint-module": "^3.0.2",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.18.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-nuxt": "^2.0.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^7.5.0",
+    "prettier": "^2.2.1"
   }
 }
